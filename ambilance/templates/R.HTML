@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de la prédiction</title>
+    <style>
+        .malade {
+            color: red;
+        }
+        .non-malade {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Résultats de la prédiction</h1>
+    <h2>Prédictions :</h2>
+    <ul>
+        <li>Résultat: <span class="{% if prediction_diabetes2 == 1 %}malade{% else %}non-malade{% endif %}">{% if prediction_diabetes2 == 1 %}Malade{% else %}Non malade{% endif %}</span></li>
+    </ul>
+    <p>Merci d'avoir utilisé notre service de prédiction des maladies.</p>
+</body>
+</html>

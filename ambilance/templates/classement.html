@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Classement des utilisateurs</title>
+    <style>
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Classement des utilisateurs (Score Final)</h1>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>User ID</th>
+            <th>Urgence</th>
+            <th>Score</th>
+            <th>Distance</th>
+            <th>Temps depuis alerte</th>
+            <th>Score Final</th>
+        </tr>
+        {% for user in classement %}
+<tr>
+    <td>{{ loop.index }}</td>
+    <td>{{ user.user_id }}</td>
+    <td>{{ user.urgence }}</td>
+    <td>{{ user.score }}</td>
+    <td>{{ user.distance }}</td>
+    <td>{{ user.temps_depuis_alerte }}</td>
+    <td>{{ user.score_final }}</td>
+</tr>
+{% endfor %}
+
+    </table>
+</body>
+</html>

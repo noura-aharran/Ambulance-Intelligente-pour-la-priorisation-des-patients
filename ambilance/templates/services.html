@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> EmergencyCare+ </title>
+
+  <!-- Bootstrap core css -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<!-- Font awesome -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+<!-- Owl Carousel (en ligne donc inchangé) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              EmergencyCare+
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('services') }}">Services <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why.html">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <!-- Ajoute ce bloc dans la section "service_section" pour remplacer les 3 services -->
+
+<section class="service_section layout_padding">
+  <div class="service_container">
+    <div class="container ">
+      <div class="heading_container heading_center">
+        
+        <h2 class="mb-4">Formulaire d'Intervention</h2>
+
+        <form method="POST" action="/services" class="mb-5">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <input type="number" name="age_patient" class="form-control" placeholder="Âge du patient" required />
+            </div>
+            <div class="col-md-6">
+              <input type="number" step="any" name="temps_depuis_alerte_min" class="form-control" placeholder="Temps depuis l'alerte (minutes)" required />
+            </div>
+          </div>
+        
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <input type="number" step="any" name="distance_patient_km" class="form-control" placeholder="Distance du patient (km)" required />
+            </div>
+            <div class="col-md-6">
+              <input type="number" step="any" name="temps_estime_deplacement_min" class="form-control" placeholder="Temps estimé de déplacement (minutes)" required />
+            </div>
+          </div>
+        
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <select name="symptomes" class="form-control" required>
+                <option value="">Symptômes</option>
+                <option value="Etourdissements">Étourdisssements</option>
+                <option value="Douleurs">Douleurs</option>
+                <option value="Nausées">Nausées</option>
+                <option value="Fièvre">Fièvre</option>
+                <option value="Fatigue">Fatigue</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select name="antecedents_med" class="form-control" required>
+                <option value="">Antécédents médicaux</option>
+                <option value="Aucun">Aucun</option>
+                <option value="Hypertension">Hypertension</option>
+                <option value="Diabète">Diabète</option>
+                <option value="Cardiaque">Cardiaque</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select name="traitements_admin" class="form-control" required>
+                <option value="">Traitements administrés</option>
+                <option value="Aucun">Aucun</option>
+                <option value="Oxygène">Oxygène</option>
+                <option value="Injection">Injection</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+          </div>
+        
+          <div class="text-center mt-4">
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+          </div>
+        </form>
+
+      <!-- Section graphique conservée -->
+      <div class="row mt-5">
+        <div class="col-md-4 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/s1.png') }}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Real-Time Triage
+              </h5>
+              <p>
+                Our AI determines patient urgency based on real medical data, ensuring fast, fair prioritization.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/s2.png') }}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Ambulance Dispatch
+              </h5>
+              <p>
+                Ambulances are dispatched immediately to patients identified as critical by the system.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/s3.png') }}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Ethical AI
+              </h5>
+              <p>
+                Our platform respects ethical rules, making patient care decisions with transparency and fairness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,98 @@
+[
+    {
+        "user_id": "75b39567-a483-4b66-9ac5-498ed8670e3c",
+        "urgence": "Élevé",
+        "score": 89.34,
+        "distance": 56.0,
+        "temps_depuis_alerte": 56.0,
+        "score_final": -72.53
+    },
+    {
+        "user_id": "24ed1ecc-2a36-4376-9a21-b46cb94299e0",
+        "urgence": "Élevé",
+        "score": 87.45,
+        "distance": 36.0,
+        "temps_depuis_alerte": 35.0,
+        "score_final": -28.47
+    },
+    {
+        "user_id": "24ed1ecc-2a36-4376-9a21-b46cb94299e0",
+        "urgence": "Élevé",
+        "score": 87.45,
+        "distance": 36.0,
+        "temps_depuis_alerte": 35.0,
+        "score_final": -28.47
+    },
+    {
+        "user_id": "24ed1ecc-2a36-4376-9a21-b46cb94299e0",
+        "urgence": "Élevé",
+        "score": 87.45,
+        "distance": 36.0,
+        "temps_depuis_alerte": 35.0,
+        "score_final": -28.47
+    },
+    {
+        "user_id": "cdbee0cf-a134-47d1-9cac-af8e8824f083",
+        "urgence": "Élevé",
+        "score": 87.35,
+        "distance": 98.0,
+        "temps_depuis_alerte": 78.0,
+        "score_final": -145.93
+    },
+    {
+        "user_id": "c5abfb07-32bc-4c4c-b27a-8567ba041fc7",
+        "urgence": "Critique",
+        "score": 38.08,
+        "distance": 78.0,
+        "temps_depuis_alerte": 67.0,
+        "score_final": -132.56
+    },
+    {
+        "user_id": "5b8d0a15-e255-4734-b467-bf1932e8b673",
+        "urgence": "Critique",
+        "score": 38.08,
+        "distance": 78.0,
+        "temps_depuis_alerte": 67.0,
+        "score_final": -132.56
+    },
+    {
+        "user_id": "15482739-27f5-4c90-bb84-b46e404af43a",
+        "urgence": "Critique",
+        "score": 38.08,
+        "distance": 78.0,
+        "temps_depuis_alerte": 67.0,
+        "score_final": -132.56
+    },
+    {
+        "user_id": "92734cf5-bd77-4ae1-8e79-761bf9734420",
+        "urgence": "Critique",
+        "score": 38.08,
+        "distance": 78.0,
+        "temps_depuis_alerte": 67.0,
+        "score_final": -132.56
+    },
+    {
+        "user_id": "2356c435-00c5-4096-8635-403e407d5460",
+        "urgence": "Critique",
+        "score": 38.08,
+        "distance": 78.0,
+        "temps_depuis_alerte": 67.0,
+        "score_final": -132.56
+    },
+    {
+        "user_id": "39c24d1e-b729-451c-937b-e04e26ad473b",
+        "urgence": "Critique",
+        "score": 38.08,
+        "distance": 78.0,
+        "temps_depuis_alerte": 67.0,
+        "score_final": -132.56
+    },
+    {
+        "user_id": "8fd7d35e-9b5a-4f1a-9ee9-37a2d7671e19",
+        "urgence": "Critique",
+        "score": 38.08,
+        "distance": 78.0,
+        "temps_depuis_alerte": 67.0,
+        "score_final": -132.56
+    }
+]
